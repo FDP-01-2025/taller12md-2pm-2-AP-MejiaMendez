@@ -67,7 +67,7 @@ void modificarEstudiante()
     bool modificado = false;
 
     cout << "Ingrese carnet a modificar: ";
-    cin >> modificado;
+    cin >> carnet;
 
     if (archivo.is_open() && temp.is_open())
     {
@@ -75,12 +75,12 @@ void modificarEstudiante()
         {
             if (e.carnet == carnet)
             {
-                cout<<"Ingrese la nueva información";
+                cout<<"Ingrese la nueva informacion"<<endl;
                 cout<<"Nombre: ";
                 cin>>e.nombre;
                 cout<<"Carnet: ";
                 cin>>e.carnet;
-                cout<<"Edad";
+                cout<<"Edad: ";
                 cin>>e.edad;
                 modificado = true;
             }
